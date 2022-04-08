@@ -9,7 +9,7 @@ Go to [VS Code's website](https://code.visualstudio.com/) and click `download`.
 
 ![VS Code's Downloads page](images/vscodedownload.jpg)
 
-Extract the download `.zip` file and move the application to `/Applications/`.
+Extract the downloaded `.zip` file and move the application to `/Applications/`.
 
 ![Downloads folder](images/downloadsfolder.jpg)
 
