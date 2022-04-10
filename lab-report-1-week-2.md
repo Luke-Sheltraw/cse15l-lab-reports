@@ -117,5 +117,5 @@ For instance, to transfer a Java file to the remote server, compile it, and then
 
 ![Example of running the command](images/shortcuts.png)
 
-This is what that would look like running a Java file that prints out the phrase "Hello, World!". Note that this file is run from the remote server, *not* the local client.
+This is what such a command would look like running a Java file that prints out the phrase "Hello, World!". Note that this file is run from the remote server, *not* the local client.
 
