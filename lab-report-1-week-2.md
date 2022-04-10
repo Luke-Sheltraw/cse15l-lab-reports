@@ -113,9 +113,9 @@ For instance, to transfer a Java file to the remote server, compile it, and then
 
 `scp Example.java cs15lsp22abc@ieng6.ucsd.edu:~/ ; ssh cs15lsp22abc@ieng6.ucsd.edu "javac Example.java ; java Example"`
 
-**Remember**: You can use the up and down keys to locate previouly used commands quickly. 
+**Remember**: You can use the up and down keys to locate previously used commands quickly. 
 
 ![Example of running the command](images/shortcuts.png)
 
-This is what such a command would look like running a Java file that prints out the phrase "Hello, World!". Note that this file is run from the remote server, *not* the local client.
+This is what such a command would look like running a Java file that prints out the phrase "Hello World!". Note that this file is run from the remote server, *not* the local client.
 
