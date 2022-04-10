@@ -102,7 +102,7 @@ Try running `scp` and `ssh` now. You shouldn't need to enter a password!
 
 ### **Optimizing Remote Running**
 
-A very common use case of a remote server is copying a file from your local client to the remote server, compiling it, and then running it. In general, when there is a series of commands that are run often it can be useful to find faster ways to enter them.
+A very common use case of a remote server is copying a file from your local client to the remote server, compiling it, and then running it. In general, when there exists a series of commands that are run often, it can be useful to find faster ways to enter them.
 
 Here are a few principles we can use to do so:
 - Distinct commands can be combined onto a single line by separating them with semicolons (`;`).
