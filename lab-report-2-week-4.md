@@ -1,6 +1,5 @@
-# Lab Report 2
+# Lab Report 2 - _Week 4_
 ## Debugging
-### Week 4
 
 ***
 
