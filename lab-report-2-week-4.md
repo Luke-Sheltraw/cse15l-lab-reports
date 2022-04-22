@@ -5,6 +5,23 @@
 
 ### **Code Change 1**
 
+Change:
+![screenshot of difference](images/)
+
+Input:
+[failure-inducing input]()
+
+Symptom:
+```
+terminal output here
+```
+Expected:
+```
+terminal output here
+```
+
+Description: 
+
 ***
 
 ### **Code Change 2**
