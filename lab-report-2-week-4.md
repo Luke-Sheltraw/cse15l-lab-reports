@@ -58,3 +58,24 @@ The bug here is that the code assumed that any pair of parentheses after a pair 
 ***
 
 ### **Code Change 3**
+
+**Accounting for images.**
+
+*Change to file on [GitHub](https://github.com/Luke-Sheltraw/markdown-parser/commit/6ce796af56d433444961c945c51b3b59216f299e)*:
+[![screenshot of difference](images/codediff3.png)](https://github.com/Luke-Sheltraw/markdown-parser/commit/6ce796af56d433444961c945c51b3b59216f299e)
+
+*Failure-inducing input on [GitHub](https://github.com/Luke-Sheltraw/markdown-parser/commit/c632abb0bb92bba407beb855cd33a3590394764b)*:
+[![screenshot of failure-inducing file](images/failurefile3.png)](https://github.com/Luke-Sheltraw/markdown-parser/commit/c632abb0bb92bba407beb855cd33a3590394764b)
+
+*Symptom*:
+```
+[https://something.com, some-thing.html]
+```
+*Expected output*:
+```
+[some-thing.html]
+```
+
+*Description*:
+
+The bug here is that the code had no way to account for images included in the input files. In markdown, an image is denoted the exact same way as a link, but with an exclamation mark (!) as the character directly before. The failure-inducing file included such an image, and resulted in the symptom of an incorrect output (i.e. the path to the image was included in the output list, when it shouldn't have been). The fix was to skip over any set of brackets directly after an exclamation mark. 
