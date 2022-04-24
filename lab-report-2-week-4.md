@@ -28,11 +28,32 @@ Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
 
 *Description*:
 
-The bug here is that the code assumed that the final text in the file would be a link. Thus, when such was not the case in our failure-inducing input file (i.e. the single closing bracket at the very end of the file), the code showed the symptom of an OutOfMemoryError, or an infinite loop. This makes sense, as .indexOf() returns -1 for a String that is not found, and the loop sets the currentIndex to be 1 greater than the index of the most recent closing parenthesis—resulting in a currentIndex of 0 whenever it can't find a closing parenthesis. The while-loop runs until currentIndex if equal to or greater than the length of the text, meaning it runs forever if there is text that isn't a link at the end of the file. We fixed this by breaking the while-loop if it can't find all the components necessary for a link in the correct order.  
+The bug here is that the code assumed that the final text in the file would be a link. Thus, when such was not the case in our failure-inducing input file (i.e. the single closing bracket at the very end of the file), the code showed the symptom of an OutOfMemoryError, or an infinite loop. This makes sense, as .indexOf() returns -1 for a String that is not found, and the loop sets the currentIndex to be 1 greater than the index of the most recent closing parenthesis—resulting in a currentIndex of 0 whenever it can't find a closing parenthesis. The while-loop runs until currentIndex is equal to or greater than the length of the text, meaning it runs forever if there is text that isn't a link at the end of the file. We fixed this by breaking the while-loop if it can't find all the components necessary for a link in the correct order.  
 
 ***
 
 ### **Code Change 2**
+
+**Accounting for text between brackets and parentheses.**
+
+*Change to file on [GitHub](https://github.com/Luke-Sheltraw/markdown-parser/commit/ad8fcfd5840604823b8f7cb3226134e04b6d717a)*:
+[![screenshot of difference](images/codediff2.png)](https://github.com/Luke-Sheltraw/markdown-parser/commit/ad8fcfd5840604823b8f7cb3226134e04b6d717a)
+
+*Failure-inducing input on [GitHub](https://github.com/Luke-Sheltraw/markdown-parser/commit/5c6788e3d730249f551e486c65ba7791108f6565)*:
+[![screenshot of failure-inducing file](images/failurefile2.png)](https://github.com/Luke-Sheltraw/markdown-parser/commit/5c6788e3d730249f551e486c65ba7791108f6565)
+
+*Symptom*:
+```
+[https://something.com, some-thing.html, test]
+```
+*Expected output*:
+```
+[https://something.com, some-thing.html]
+```
+
+*Description*:
+
+The bug here is that the code assumed that any pair of parentheses after a pair of brackets contained a link, which is true if the parentheses directly follow—but not if they are separated by text. The failure-inducing input file contained such a situation, in which the brackets and parentheses were broken by text. This should have resulted in that link being interpreted as plain text, but resulted in the symptom of an incorrect output (i.e. the output list contained the text, "test", contained in the parentheses). The fix was to jump to the next set of closed brackets if the ones being looked at were not directly followed by an opening parenthesis.  
 
 ***
 
