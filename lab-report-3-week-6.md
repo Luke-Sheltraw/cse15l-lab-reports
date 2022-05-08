@@ -5,15 +5,15 @@
 
 ### **Choice 1**
 
-**Streamlining ssh Configuration**
+**Streamlining `ssh` Configuration**
 
-*Editing `.ssh/config` with VS Code:*
+*Editing `~/.ssh/config` with VS Code*:
 ![Config file in VSCode](images/configpic.png)
 
-*Using `ssh` to log in with the new alias:*
+*Using `ssh` to log in with the new alias*:
 ![Logging in with ieng6](images/terminalssh.png)
 
-*Using `scp` to transfer files with the new alias:*
+*Using `scp` to transfer files with the new alias*:
 ![Using SCP with ieng6](images/scpwithieng6.png)
 
 *Description*: 
@@ -24,12 +24,41 @@ By editing the `ssh` config file, `~/.ssh/config`, I was able to assign `ieng6` 
 
 ### **Choice 2**
 
-**Setup Github Access from ieng6**
+**Setup Github Access from `ieng6`**
+
+**:
+![](images/)
+
+**:
+![](images/)
+
+**:
+![](images/)
+
+*Description*:
+
+
 
 ***
 
 ### **Choice 3**
 
-**Copy whole directories with scp -r**
+**Copy whole directories with `scp -r`**
 
-***
+*Copying my `/markdown-parse/` directory to `ieng6`*:
+![Copying entire markdown-parse directory part 1](images/scprecurse1.png)
+![Copying entire markdown-parse directory part 2](images/scprecurse2.png)
+*(Split across two images, as the print-out is very long)*
+
+*Logging into `ieng6` and compiling/running the tests for my repo*:
+![Running tests on remote server](images/sshmarkdowntests.png)
+
+*Combining `scp`, `;`, and `ssh` to copy entire directory and run tests in a single line*:
+![Combing commands into a single line](images/singlecommandtesting.png)
+
+*Description*:
+
+Normally, `scp` allows us to just copy a single file. However, by using the `-r` modifier, we are able to recursively copy entire directories (and their subdirectories) to a remote server. The following command allows me to copy the just the files I need (`.java` files, `.md` files, and the `lib/` directory) to the remote server, and then compile and run all the test cases in `MarkdownParseTest.java`. All in one line.
+```
+scp -r *.java *.md lib/ ieng6:markdown-parse ; ssh ieng6 "cd ~/markdown-parse ; /software/CSE/oracle-java-17/jdk-17.0.1/bin/javac -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar MarkdownParseTest.java ; /software/CSE/oracle-java-17/jdk-17.0.1/bin/java -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MarkdownParseTest"
+```
