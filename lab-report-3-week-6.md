@@ -18,7 +18,7 @@
 
 *Description*: 
 
-Editing `.ssh/config` to be able to use `ieng6` as an alias for the full hostname of my remote account, `cs15lsp22abo@ieng6.ucsd.edu`. I used VS Code to edit the file.
+By editing the `ssh` config file, `~/.ssh/config`, I was able to assign `ieng6` as an alias for my full remote account name, `cs15lsp22abo@ieng6.ucsd`. This then allows me to save time and effort by logging in to the remote server using just `ssh ieng6`. Furthermore, I am able to use the alias anywhere else I would be using the full account name: such as to transfer files with `scp`.
 
 ***
 
