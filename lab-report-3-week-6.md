@@ -3,25 +3,33 @@
 
 ***
 
-### **Streamlining ssh Configuration**
+### **Option 1**
 
+**Streamlining ssh Configuration**
+
+*Editing `.ssh/config` with VS Code:*
 ![Config file in VSCode](images/configpic.png)
-*Editing `.ssh/config` to be able to use `ieng6` instead of the full hostname of my remote account, `cs15lsp22abo@ieng6.ucsd.edu`. I used VS Code to edit the file.*
 
-
+*Using `ssh` to log in with the new alias:*
 ![Logging in with ieng6](images/terminalssh.png)
-*Using `ssh` to log in; now I don't have to type out the full account name!*
 
+*Using `scp` to transfer files with the new alias:*
 ![Using SCP with ieng6](images/scpwithieng6.png)
-*Using `scp` to transfer files with the new shorthand.*
 
+*Description*: 
 
-***
-
-### **Setup Github Access from ieng6**
+Editing `.ssh/config` to be able to use `ieng6` as an alias for the full hostname of my remote account, `cs15lsp22abo@ieng6.ucsd.edu`. I used VS Code to edit the file.
 
 ***
 
-### **Copy whole directories with scp -r**
+### **Option 2**
+
+**Setup Github Access from ieng6**
+
+***
+
+### **Option 3**
+
+**Copy whole directories with scp -r**
 
 ***
