@@ -3,7 +3,7 @@
 
 ***
 
-### **Option 1**
+### **Choice 1**
 
 **Streamlining ssh Configuration**
 
@@ -22,13 +22,13 @@ Editing `.ssh/config` to be able to use `ieng6` as an alias for the full hostnam
 
 ***
 
-### **Option 2**
+### **Choice 2**
 
 **Setup Github Access from ieng6**
 
 ***
 
-### **Option 3**
+### **Choice 3**
 
 **Copy whole directories with scp -r**
 
