@@ -5,7 +5,7 @@
 
 ### **Choice 1**
 
-**Streamlining `ssh` Configuration**
+**Streamlining `ssh` configuration.**
 
 *Editing `~/.ssh/config` with VS Code*:
 ![Config file in VSCode](images/configpic.png)
@@ -24,7 +24,7 @@ By editing the `ssh` config file, `~/.ssh/config`, I was able to assign `ieng6` 
 
 ### **Choice 2**
 
-**Setup Github Access from `ieng6`**
+**Setting up Github access from `ieng6`.**
 
 **:
 ![](images/)
@@ -43,7 +43,7 @@ By editing the `ssh` config file, `~/.ssh/config`, I was able to assign `ieng6` 
 
 ### **Choice 3**
 
-**Copy whole directories with `scp -r`**
+**Copying whole directories with `scp -r`.**
 
 *Copying my `/markdown-parse/` directory to `ieng6`*:
 ![Copying entire markdown-parse directory part 1](images/scprecurse1.png)
