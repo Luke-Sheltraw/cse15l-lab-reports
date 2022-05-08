@@ -62,5 +62,5 @@ Normally, I commit and push changes using GitHub Desktop. Obviously, that is not
 
 *Description*:
 
-Normally, `scp` allows us to just copy a single file. However, by using the `-r` flag, we are able to recursively copy entire directories (and their subdirectories) to the remote server. The following command allows me to copy only the files I need (`.java` files, `.md` files, and the `lib/` directory) to the remote server, and then compile and run all the test cases in `MarkdownParseTest.java`. All in one line.
+Generally, `scp` allows us to only copy a single file. However, by using the `-r` flag, we are able to recursively copy entire directories (and their subdirectories) to the remote server. The following command allows me to copy only the files I need (`.java` files, `.md` files, and the `lib/` directory) to the remote server, and then compile and run all the test cases in `MarkdownParseTest.java`. All in one line.
 > ```scp -r *.java *.md lib/ ieng6:markdown-parse ; ssh ieng6 "cd ~/markdown-parse ; /software/CSE/oracle-java-17/jdk-17.0.1/bin/javac -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar MarkdownParseTest.java ; /software/CSE/oracle-java-17/jdk-17.0.1/bin/java -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MarkdownParseTest"```
