@@ -26,14 +26,18 @@ By editing the `ssh` config file, `~/.ssh/config`, I was able to assign `ieng6` 
 
 **Setting up Github access from `ieng6`.**
 
-**:
-![](images/)
+*Public key's location on GitHub and on my user account*:
+![Public key's location on GitHub](images/)
+![Public key's location on my user account]()
 
-**:
-![](images/)
+*Private key's location on my user account:*
+![Private key's location](images/)
 
-**:
-![](images/)
+*Running git commands to commit and push a change to Github, remotely logged in*:
+![Git commit and push for remote server](images/)
+
+*Link for the resulting commit*: []()
+
 
 *Description*:
 
@@ -58,7 +62,5 @@ By editing the `ssh` config file, `~/.ssh/config`, I was able to assign `ieng6` 
 
 *Description*:
 
-Normally, `scp` allows us to just copy a single file. However, by using the `-r` modifier, we are able to recursively copy entire directories (and their subdirectories) to a remote server. The following command allows me to copy the just the files I need (`.java` files, `.md` files, and the `lib/` directory) to the remote server, and then compile and run all the test cases in `MarkdownParseTest.java`. All in one line.
-```
-scp -r *.java *.md lib/ ieng6:markdown-parse ; ssh ieng6 "cd ~/markdown-parse ; /software/CSE/oracle-java-17/jdk-17.0.1/bin/javac -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar MarkdownParseTest.java ; /software/CSE/oracle-java-17/jdk-17.0.1/bin/java -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MarkdownParseTest"
-```
+Normally, `scp` allows us to just copy a single file. However, by using the `-r` modifier, we are able to recursively copy entire directories (and their subdirectories) to the remote server. The following command allows me to copy only the files I need (`.java` files, `.md` files, and the `lib/` directory) to the remote server, and then compile and run all the test cases in `MarkdownParseTest.java`. All in one line.
+> ```scp -r *.java *.md lib/ ieng6:markdown-parse ; ssh ieng6 "cd ~/markdown-parse ; /software/CSE/oracle-java-17/jdk-17.0.1/bin/javac -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar MarkdownParseTest.java ; /software/CSE/oracle-java-17/jdk-17.0.1/bin/java -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MarkdownParseTest"```
