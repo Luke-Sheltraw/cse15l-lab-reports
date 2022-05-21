@@ -15,7 +15,7 @@
 
 *Expected output*:
 ![Expected output of snippet](images/snippet1expectedoutput.png)
-**Description**: VSCode's Previews ``[`google.com]``.
+**Description**: VSCode's Preview shows that there are three links, which would form the list ``[`google.com, google.com, ucsd.edu]``.
 
 *Tests in `MarkdownParseTest.java`*:
 ![JUnit tests]()
@@ -34,7 +34,7 @@
 
 *Expected output*:
 ![Expected output of snippet](images/snippet2expectedoutput.png)
-**Description**: CommonMark shows that the expected output contains three links, which should be the list ``[a.com, a.com(()), example.com]``.
+**Description**: VSCode's Preview shows that there are three links, which would form the list ``[a.com, a.com(()), example.com]``.
 
 *Tests in `MarkdownParseTest.java`*:
 ![JUnit tests]()
@@ -53,7 +53,7 @@
 
 *Expected output*:
 ![Expected output of snippet](images/snippet3expectedoutput.png)
-**Description**: CommonMark shows that the expected output is a single link, which should be the list ``[https://sites.google.com/eng.ucsd.edu/cse-15l-spring-2022/schedule]``.
+**Description**: VSCode's Preview shows that there is one link, which would form the list ``[https://sites.google.com/eng.ucsd.edu/cse-15l-spring-2022/schedule]``. There are two other "links," however that is because VSCode automatically interprets anything of the form https://... as a link (as illustrated by them having no title). In the scope of this project, then, we would not consider those two to be expected output. 
 
 *Tests in `MarkdownParseTest.java`*:
 ![JUnit tests]()
