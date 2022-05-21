@@ -14,7 +14,7 @@
 ### **Snippet 1**
 
 *Expected output*:
-![Expected output of snippet]()
+![Expected output of snippet](images/snippet1expectedoutput.png)
 
 *Tests in `MarkdownParseTest.java`*:
 ![JUnit tests]()
@@ -32,7 +32,7 @@
 ### **Snippet 2**
 
 *Expected output*:
-![Expected output of snippet]()
+![Expected output of snippet](images/snippet2expectedoutput.png)
 
 *Tests in `MarkdownParseTest.java`*:
 ![JUnit tests]()
@@ -50,7 +50,7 @@
 ### **Snippet 3**
 
 *Expected output*:
-![Expected output of snippet]()
+![Expected output of snippet](images/snippet3expectedoutput.png)
 
 *Tests in `MarkdownParseTest.java`*:
 ![JUnit tests]()
