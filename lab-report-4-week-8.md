@@ -63,7 +63,7 @@
 
 *Tests on my implementation*:
 ![Test output on my implementation](images/snippet3mytest.png)
-**Description**: 
+**Description**: The test failed. As illustrated in the screenshot, my implementation of markdown-parser included `https://www.twitter.com` when it should not have.
 
 *Tests on reviewed implementation*:
 ![Test output on reviewed implementation]()
