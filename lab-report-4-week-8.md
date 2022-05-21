@@ -15,6 +15,7 @@
 
 *Expected output*:
 ![Expected output of snippet](images/snippet1expectedoutput.png)
+**Description**: CommonMark shows that the expected output is a single link, which would be the list ``[`google.com]``.
 
 *Tests in `MarkdownParseTest.java`*:
 ![JUnit tests]()
@@ -33,6 +34,7 @@
 
 *Expected output*:
 ![Expected output of snippet](images/snippet2expectedoutput.png)
+**Description**: CommonMark shows that the expected output contains three links, which should be the list ``[a.com, a.com(()), example.com]``.
 
 *Tests in `MarkdownParseTest.java`*:
 ![JUnit tests]()
@@ -51,6 +53,7 @@
 
 *Expected output*:
 ![Expected output of snippet](images/snippet3expectedoutput.png)
+**Description**: CommonMark shows that the expected output is a single link, which should be the list ``[https://sites.google.com/eng.ucsd.edu/cse-15l-spring-2022/schedule]``.
 
 *Tests in `MarkdownParseTest.java`*:
 ![JUnit tests]()
