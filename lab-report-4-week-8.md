@@ -9,21 +9,29 @@
 
 *Reviewed repository*: [https://github.com/mrreganwang/markdown-parser](https://github.com/mrreganwang/markdown-parser)
 
+***
+
 ### **Snippet 1**
 
 *Expected output*:
+
 ![Expected output of snippet]()
 
 *Tests in `MarkdownParseTest.java`*:
+
 ![JUnit tests]()
 
 *Tests on my implementation*:
+
 ![Test output on my implementation]()
+
 **Description**: 
 
 
 *Tests on reviewed implementation*:
+
 ![Test output on reviewed implementation]()
+
 **Description**: 
 
 ***
@@ -31,18 +39,24 @@
 ### **Snippet 2**
 
 *Expected output*:
+
 ![Expected output of snippet]()
 
 *Tests in `MarkdownParseTest.java`*:
+
 ![JUnit tests]()
 
 *Tests on my implementation*:
+
 ![Test output on my implementation]()
+
 **Description**: 
 
 
 *Tests on reviewed implementation*:
+
 ![Test output on reviewed implementation]()
+
 **Description**: 
 
 ***
@@ -50,18 +64,24 @@
 ### **Snippet 3**
 
 *Expected output*:
+
 ![Expected output of snippet]()
 
 *Tests in `MarkdownParseTest.java`*:
+
 ![JUnit tests]()
 
 *Tests on my implementation*:
+
 ![Test output on my implementation]()
+
 **Description**: 
 
 
 *Tests on reviewed implementation*:
+
 ![Test output on reviewed implementation]()
+
 **Description**: 
 
 ***
