@@ -15,7 +15,7 @@
 
 *Expected output*:
 ![Expected output of snippet](images/snippet1expectedoutput.png)
-**Description**: CommonMark shows that the expected output is a single link, which would be the list ``[`google.com]``.
+**Description**: VSCode's Previews ``[`google.com]``.
 
 *Tests in `MarkdownParseTest.java`*:
 ![JUnit tests]()
