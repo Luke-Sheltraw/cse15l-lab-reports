@@ -26,8 +26,8 @@
 **Description**: The test failed. As illustrated in the screenshot, my implementation of markdown-parser included `url.com` in the list, when it should not have. 
 
 *Tests on reviewed implementation*:
-![Test output on reviewed implementation]()
-**Description**: 
+![Test output on reviewed implementation](images/snippet2theirtest.png)
+**Description**: The test failed.
 
 ***
 
@@ -46,8 +46,8 @@
 **Description**: The test failed. As illustrated in the screenshot, my implementation of markdown-parser included `b.com` in place of `a.com` for the first link.
 
 *Tests on reviewed implementation*:
-![Test output on reviewed implementation]()
-**Description**: 
+![Test output on reviewed implementation](images/snippet2theirtest.png)
+**Description**: The test failed.
 
 ***
 
@@ -66,8 +66,8 @@
 **Description**: The test failed. As illustrated in the screenshot, my implementation of markdown-parser included `https://www.twitter.com` (surrounded by white space) when it should not have.
 
 *Tests on reviewed implementation*:
-![Test output on reviewed implementation]()
-**Description**: 
+![Test output on reviewed implementation](images/snippet3theirtest.png)
+**Description**: The test failed.
 
 ***
 
