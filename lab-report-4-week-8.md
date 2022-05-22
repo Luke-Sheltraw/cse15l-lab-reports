@@ -26,8 +26,8 @@
 **Description**: The test failed. As illustrated in the screenshot, my implementation of markdown-parser included `url.com` in the list, when it should not have. 
 
 *Tests on reviewed implementation*:
-![Test output on reviewed implementation](images/snippet2theirtest.png)
-**Description**: The test failed.
+![Test output on reviewed implementation](images/snippet1theirtest.png)
+**Description**: The test failed. 
 
 ***
 
