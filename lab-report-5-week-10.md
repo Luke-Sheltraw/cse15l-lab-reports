@@ -58,4 +58,4 @@ bar)
 
 *Description of bug*:
 ![screenshot of where code needs to be changed](images/codetofix489.png)
-The bug in my implementation occured becaues my implementation has no handling for links broken across multiple lines. A correct implementation should void a link if it is broken across multiple lines (unless just the parentheses are on different lines). Specifically, line 44 of my `MarkdownParse.java` illustrates this issue: the closing parenthesis is defined to simply be the next closing parenthesis in the input, disregarding any line breaks. More case-checking should be added here instead.
+The bug in my implementation occured because my implementation has no handling for links broken across multiple lines. A correct implementation should void a link if it is broken across multiple lines (unless just the parentheses are on different lines). Specifically, line 44 of my `MarkdownParse.java` illustrates this issue: the closing parenthesis is defined to simply be the next closing parenthesis in the input, disregarding any line breaks. More case-checking should be added here instead.
