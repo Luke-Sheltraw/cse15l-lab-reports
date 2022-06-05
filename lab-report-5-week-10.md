@@ -32,10 +32,10 @@ bar)
 (My implementation: `[]`)
 
 *Expected output*:
-![expected output](images/)
-Expected list: `[]`
+![expected output](images/194expected.png)
+Expected list: `[my_(url)]`
 
-*Correct implementation*:
+*Correct implementation*: Neither implementation was correct, although the provided implementation was arguably "more" correct, as it provided a link—albeit an incorrect one.
 
 *Description of bug*:
 ![screenshot of where code needs to be changed](images/)
@@ -51,10 +51,10 @@ Expected list: `[]`
 (My implementation: `[foo\nbar]`)
 
 *Expected output*:
-![expected output](images/)
+![expected output](images/489expected.png)
 Expected list: `[]`
 
-*Correct implementation*:
+*Correct implementation*: The provided implementation was correct. It correctly provided an empty list, indicating that no link was present.
 
 *Description of bug*:
 ![screenshot of where code needs to be changed](images/)
