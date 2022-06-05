@@ -25,9 +25,8 @@ To find differing tests, I used a bash for-loop to iterate through and test ever
 ![my implementation's output](images/myresult194.png)
 (My implementation: `[]`)
 
-*Expected output*:
+*Expected output*: `[my_(url)]`
 ![expected output](images/194expected.png)
-Expected list: `[my_(url)]`
 
 *Correct implementation*: Neither implementation was correct, although the provided implementation was arguably "more" correct, as it provided a link—albeit an incorrect one.
 
@@ -51,9 +50,8 @@ bar)
 ![my implementation's output](images/myresult489.png)
 (My implementation: `[foo\nbar]`)
 
-*Expected output*:
+*Expected output*: `[]`
 ![expected output](images/489expected.png)
-Expected list: `[]`
 
 *Correct implementation*: The provided implementation was correct. It correctly provided an empty list, indicating that no link was present.
 
