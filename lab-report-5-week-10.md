@@ -21,6 +21,7 @@ To find differing tests, I used a bash for-loop to iterate through and test ever
 *Actual outputs*:
 ![provided implementation's output](images/providedresult194.png)
 (Provided implementation: `[url]`)
+
 ![my implementation's output](images/myresult194.png)
 (My implementation: `[]`)
 
@@ -46,6 +47,7 @@ bar)
 *Actual outputs*:
 ![provided implementation's output](images/providedresult489.png)
 (Provided implementation: `[]`)
+
 ![my implementation's output](images/myresult489.png)
 (My implementation: `[foo\nbar]`)
 
